@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: black;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.content-section {
+    padding: 4rem 2rem;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff; 
+}
+
+.content-section h1 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 30vh;
+}
+
+footer h1 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+
+    input{
+        width: 100%;
+    }
+
+    .content-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content{
+        padding: 10px;
+        padding-right: 20px;
+    }
+}
+
+
+.aboutme-section {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: white;
+    padding: 30px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.aboutme-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.aboutme-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
